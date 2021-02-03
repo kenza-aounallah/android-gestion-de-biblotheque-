@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="Modifier Livre"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="titre"
+        android:id="@+id/titre"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Auteur"
+        android:id="@+id/auteur"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Disponible"
+                android:textColor="#838786" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Non disponible"
+                android:textColor="#838786" />"
+        </RadioGroup>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/nbrexemplaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre d'exemplaire :"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="388dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:hint="Donner une description :"
+        android:inputType="textMultiLine"
+        android:lines="6"
+        android:maxLines="10"
+        android:minLines="5" />
+
+    <Button
+        android:id="@+id/usubmit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Modifier"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+</LinearLayout>

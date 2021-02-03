@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".InscriptionActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@drawable/book" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center|bottom"
+            android:background="#00BCD4">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Se connecter "
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_gravity="left|center"
+            android:padding="16dp"
+             />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/sin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="Se connecter"
+                android:textColor="@color/common_google_signin_btn_text_dark_default"
+                android:textSize="16dp" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_centerInParent="true"
+        android:drawableLeft="@drawable/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/login_passord"
+        android:layout_below="@+id/login_email"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/lockers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="169dp"
+        android:layout_height="17dp"
+        android:layout_below="@id/login_passord"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:text="mot de passe oublié?"
+        android:textAllCaps="false"
+        />
+
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgot"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/custom_button"
+        android:text="Connexion"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/need_an_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17sp"
+        android:text=" Besoin d'un compte? S'inscrire" />
+</RelativeLayout>
